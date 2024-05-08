@@ -5,8 +5,6 @@ a2enmod proxy_balancer
 a2enmod lbmethod_byrequests
 service php7.0-fpm start
 
-cd /etc/apache2/sites-available/
-
 #address
 serverny="10.65.2.3"
 stalber="10.65.2.2"
@@ -27,10 +25,9 @@ echo "<VirtualHost *:8080>
 
     ProxyPass / balancer://mycluster/
     ProxyPassReverse / balancer://mycluster/
-</VirtualHost>" > default-8080.conf
+</VirtualHost>" > /etc/apache2/sites-available/default-8080.conf
 
-cd ..
-echo 'Listen 8080' >> ports.conf
+echo 'Listen 8080' >> /etc/apache2/ports.conf
 
 a2ensite default-8080.conf
 service apache2 restart
