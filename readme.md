@@ -10,9 +10,9 @@ Praktikum Modul 2 Jaringan Komputer - **IT-03**
 | [Wilson Matthew Thendry](https://www.github.com/waifuwetdream) | 5027221024 |
 
 ### Topologi 3
-![TopologyAsli](Docs/Topol3.png)
+![TopologyAsli](images/Topol3.png)
 
-![Topology](Docs/Topology3.png)
+![Topology](images/Topology3.png)
 
 # Laporan Resmi Modul 2
 
