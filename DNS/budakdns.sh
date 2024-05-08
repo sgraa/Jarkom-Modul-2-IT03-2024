@@ -37,9 +37,10 @@ $TTL    604800
                          604800 )       ; Negative Cache TTL
 ;
 @       IN      NS      siren.redzone.it03.com.
-@       IN      A       10.65.2.3       ; IP Severny
-www     IN      CNAME   siren.redzone.it03.com.
-log     IN      A       10.65.2.3       ;' > /etc/bind/siren/siren.redzone.it03.com
+@       IN      A       10.65.2.3
+www     IN      A       10.65.2.3
+log     IN      A       10.65.2.3
+www.log IN      CNAME   www.siren.redzone.it03.com.'> /etc/bind/siren/siren.redzone.it03.com
 
 echo "options {
     directory \"/var/cache/bind\";

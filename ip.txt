@@ -1,0 +1,17 @@
+[Master]
+Pochinki 10.65.1.2
+
+[Slave]
+Georgopol 10.65.1.5
+
+[Client]
+GatkaTrenches 10.65.1.3
+GatkaRadio 10.65.1.4
+
+[Load Balancer]
+Mylta 10.65.2.5
+
+[Web Server]
+Stalber 10.65.2.2
+Severny 10.65.2.3
+Lipovka 10.65.2.4
